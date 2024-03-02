@@ -4,14 +4,17 @@ import MainNav from "./MainNav";
 
 const Header = () => {
   return (
-    <div className="border-b-2 border-b-orange-500 py-6">
-      <div className="container mx-auto flex justify-between items-center">
+    <div className=" absolute z-30 w-full py-6">
+      <div className="container flex justify-end gap-12 items-center">
+        <div className="hidden md:block">
+
         <Link
           to={"/"}
-          className="text-3xl font-bold text-orange-500 tracking-tight items-center"
+          className="text-3xl  text-white tracking-tight items-center"
         >
-          MernEats.com
+          Add resturant
         </Link>
+        </div>
         <div className="md:hidden">
           <MobileNav />
         </div>
